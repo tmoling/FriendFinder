@@ -5,6 +5,8 @@
   <title>Friend Finder Survey</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Monofett|Monoton|Montserrat|Fredoka+One|Pacifico|Shrikhand"
+rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
@@ -221,7 +223,7 @@
       //ajax send info to api route and await response
       function success(data) {
           //build info into modal, use html to replace previous friend
-          $('.modal-body').html('<h1>Meet your new friend!</h1>' +
+          $('.modal-body').html('<h3>Meet your new friend!</h3>' +
             '<h3> ' + data.name + '</h3>' +
             '<img src="' + data.photo + '" width=300px>');
           //toggle modal to appear on page
@@ -237,5 +239,18 @@
     })
   </script>
 </body>
+
+<style>
+    h1 {
+      font-family: 'Shrikhand', cursive;
+    }
+
+    p,
+    h3,
+    h4 {
+      font-family: 'Montserrat', cursive;
+    }
+  
+  </style>
 
 </html>
