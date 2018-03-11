@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Friend Finder Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="main-content" class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="jumbotron">
+          <h1>
+            <strong>Survey Questions</strong>
+          </h1>
+          <div>
+            <div class="input-group">
+              <h3>About You</h3>
+              <p>Name (Required)</p>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <br>
+            <div class="input-group">
+              <p>Link to Photo Image (Required)</p>
+              <input type="text" id="photo" class="form-control" required>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="survey">
+          <h3>
+            <strong>Question 1</strong>
+          </h3>
+          <h4>I'd prefer to stay in reading Emily Dickinson poems than go out for dinner and dancing.</h4>
+          <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 2</strong>
+          </h3>
+          <h4>I'm easily distracted by shiny objects.</h4>
+          <select data-placeholder="" class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 3</strong>
+          </h3>
+          <h4>My idea of being active is walking to the fridge for another piece of cake.</h4>
+          <select data-placeholder="" class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 4</strong>
+          </h3>
+          <h4>Dane Cook is the funniest person on the planet.</h4>
+          <select data-placeholder="" class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 5</strong>
+          </h3>
+          <h4>Pineapple definitely belongs on a pizza.</h4>
+          <select data-placeholder="" class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 6</strong>
+          </h3>
+          <h4>I believe the toilet paper should never hang under the roll.</h4>
+          <select data-placeholder="" class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+
+          <h3>
+            <strong>Question 7</strong>
+          </h3>
+          <h4>Wearing socks with sandals is my kind of style.</h4>
+          <select data-placeholder="" class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 8</strong>
+          </h3>
+          <h4>I think it's important to always follow the rules.</h4>
+          <select data-placeholder="" class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 9</strong>
+          </h3>
+          <h4>I'm an unapologetic cat person.</h4>
+          <select data-placeholder="" class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <h3>
+            <strong>Question 10</strong>
+          </h3>
+          <h4>The laughter of a single child is more precious than all the gold and silver in the world.</h4>
+          <select data-placeholder="" class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        </div>
+
+        <br>
+        <br>
+
+        <button type="submit" id="submit" class="btn btn-success btn-lg btn-block">
+         </span>Submit</button>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- this will modal pop-up will be revealed after the form is filled out and submitted -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h1 class="modal-title" id="myModalLabel">Success!</h1>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+
+  </footer>
+
+  <script type="text/javascript">
+    //on click of submit button, ajax on click
+    $('#submit').on('click', function () {
+
+      var newFriend = {
+        'name': $('#name').val().trim(),
+        'photo': $('#photo').val().trim(),
+        'scores': [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
+      };
+
+      //grab current URL for post method
+      var currentURL = window.location.origin;
+      //ajax send info to api route and await response
+      function success(data) {
+          //build info into modal, use html to replace previous friend
+          $('.modal-body').html('<h1>Meet your new friend!</h1>' +
+            '<h3> ' + data.name + '</h3>' +
+            '<img src="' + data.photo + '" width=300px>');
+          //toggle modal to appear on page
+          $('#myModal').modal('toggle');
+      }
+      $.ajax({
+        type: "POST",
+        url: currentURL + "/api/friends",
+        data: newFriend,
+        success: success
+      });
+
+    })
+  </script>
+</body>
+
+</html>
