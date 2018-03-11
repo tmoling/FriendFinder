@@ -1,7 +1,7 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app will match you with friends",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/tmoling/FriendFinder.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "TRM",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tmoling/FriendFinder/issues"
