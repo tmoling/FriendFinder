@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 //this sets up express to port 3000 localhost
+//process.env.port will act as the port when deployed to heroku
 var app = express();
 var PORT = process.env.PORT || 3000;
 
@@ -17,7 +18,8 @@ app.use(express.static(path.join(__dirname, 'app/public')));
 
 
 //this sets up routes by requiring from routing folder 
-//this sends app object through require 
+//this sends api and html pages through require 
+//remember server acts as the main js file here
 require('./app/routing/api-routes.js')(app);
 require('./app/routing/html-routes.js')(app);
 

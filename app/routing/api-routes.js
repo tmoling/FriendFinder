@@ -1,10 +1,10 @@
 //this is requiring the friends.js file
+//remember the .. goes up a degree
 var friendsList = require('../data/friends.js');
 
-//this is requiring path ans body parser
+//this is requiring path and body parser
 var bodyParser = require('body-parser');
 var path = require('path');
-
 
 //sending a get request to to api-friends url
 //json response will display friends
@@ -26,14 +26,13 @@ module.exports = function (app) {
     //comparative number for user's array total
     var userTotal = sum(req.body.scores);
 
-
     //set this to 0 outside of the loop
     var friendTotal = 0;
 
     //highest amount of points array can equal
     var closest = 50;
-    //for loop for finding friend with clest match to user data entered
-    ////loop will stop when cloesest match to user data is found
+    //for loop for finding friend with closest match to user data entered
+    //loop will stop when closest match to user data is found
     console.log(friendsList)
     for (var i = 0; i < friendsList.length; i++) {
       friendTotal = sum(friendsList[i].scores);
@@ -45,7 +44,6 @@ module.exports = function (app) {
       };
     };
 
-
     //function to add the sum from the scores entered by user against the ojects/people in the array
     function sum(array) {
       var total = 0;
@@ -54,9 +52,6 @@ module.exports = function (app) {
       }
       return total;
     }
-
-    //test answer
-    //console.log(bestMatch);
 
     //return the best match back to webpage
     res.json(bestMatch);

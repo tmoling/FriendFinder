@@ -1,5 +1,4 @@
 
-
 //list of friends that are possible matches
 var friends = [
 	{
